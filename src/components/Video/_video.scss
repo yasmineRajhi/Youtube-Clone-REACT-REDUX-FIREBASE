@@ -1,0 +1,52 @@
+@import '../../base';
+
+.Video__comp{
+    width: 40vh;
+    max-width: 40vh;
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+    .video__thumbnail{
+        width: 303px;
+
+        img{
+            width: 303px;
+            height: fit-content;
+        }
+    }
+    
+    .details{
+        display: flex;
+        margin-top: 10px;
+        font-size: small;
+        h6{
+            color: $text-color;
+            font-weight: 700;
+            font-size: 17px;
+            margin-bottom: 2px;
+            @include line-clamp(2);
+        }
+        p{
+           color: grey;
+           font-size: 15px !important;
+           margin-bottom: 2px;
+           
+           small{
+              color: grey;
+           }
+        }
+    }
+    
+    .channel__avatar__icon{
+        margin-right: 10px;
+        border-radius: 50%;
+        vertical-align: middle;
+        width: 50px !important;
+        height: 50px !important;
+    }
+}
+
+

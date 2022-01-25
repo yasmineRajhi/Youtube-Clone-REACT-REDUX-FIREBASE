@@ -1,0 +1,109 @@
+.NAV{
+    background-color: white;
+    height: 60px;
+    width: 100%;
+    padding: 15px;
+    border-bottom: 1px solid #00000033;
+    box-shadow: 0 2px 2px 0 #00000033;
+    display: flex;
+    justify-content: space-between;
+}
+
+.youtube__icon__left__nav{
+    margin-left: 15px;
+    color: red;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.youtube__name__left__nav{
+    margin-left: 2px;
+    font-weight: 700;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.logo_redirector_home{
+    text-decoration: none;
+    color: initial;
+}
+
+.middle-of-navbar{
+    max-height: 37px;
+    display: flex;
+}
+
+.navbar__search__input{
+    height: 35px;
+    width: 570px;
+    outline-color: #d1d1d1;
+    margin-top: 0px !important;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: inherit;
+}
+
+.navbar__search__input:focus{
+    outline-color: #8b8bf1;
+}
+
+.navbar__search__input::placeholder{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar__search__btn{
+    height: 35px;
+    width: 60px;
+    background-color: #F9F9F9;
+    border: 1px solid #d1d1d1;
+}
+
+.search__icon__nav__btn{
+    font-size: x-large;
+}
+
+.middle__nav__mic__container{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #F9F9F9;
+    margin-left: 7px;
+}
+
+.middle__nav__mic{
+    font-size: 25px;
+    margin-left: 7.5px;
+    margin-top: 6px;
+}
+
+.right-of-navbar{
+    display: flex;
+    margin-right: 10px;
+}
+
+.right__nav__apps{
+    margin-right: 10px;
+}
+
+.right__nav__more{
+    margin-right: 10px;
+}
+
+.right__nav__connect__btn{
+    margin-right: 10px;
+    background-color: transparent;
+    border: 1px solid #037ef3;
+    color: #037ef3;
+    height: 35px;
+    width: 145px;
+    padding: 5px;
+    display: flex;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.right__nav__connect__btn__icon{
+    margin-right: 5px;
+}

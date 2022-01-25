@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+$text-color : #464444;
+$hover-color : #f9f9f9;
+$selected-color : #e2e2e2;
+$active-bg-category : #000;
+$active-color-category : #fff;
+$media-medium : 1224px;
+$media-small : 520px;
+
+$border-color : #c2bdbd;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F9F9F9;
+    background-attachment: fixed;
+    color: $text-color;
+    font-family: 'Lato',sans-serif;
+    letter-spacing: 0.1px;
+}
+
+@mixin line-clamp($number) {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: $number;
+    -webkit-box-orient: vertical;
+}

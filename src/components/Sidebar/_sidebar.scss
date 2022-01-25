@@ -1,0 +1,102 @@
+.sidebar__button__activator{
+    cursor: pointer;
+    color: initial;
+    font-size: 18px;
+}
+
+.menu-bars{
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu-bars:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-menu{
+    background-color: white;
+    width: 250px;
+    height: 100rem;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms ease-in-out;
+}
+
+.nav-menu.active{
+    left: 0;
+    transition: 250ms;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.nav__overlay{
+    position: fixed;
+    top: 0;
+    left: 250px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1px);
+    visibility: hidden;
+    opacity: 0;
+}
+.nav-menu.active .nav__overlay{
+    visibility: visible;
+    opacity: 1;
+    transition: 850ms ease-in-out;
+}
+
+.nav-text{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    height: 40px;
+    color: black;
+
+    span{
+        margin-right: 10px;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+        z-index: 2;
+        
+        &:hover{
+            background-color: #f1f0f0;
+            width: 100%;
+            color: inherit;
+        }
+    }
+
+}
+
+.nav-menu-items{
+    width: 100%;
+    padding: 0;
+}
+
+.navbar-toggle{
+    background-color: white;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+}
+
+.youtube__name__left__nav{
+    margin-left: 16px;
+}
