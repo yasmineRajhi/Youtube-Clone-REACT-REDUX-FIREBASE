@@ -1,0 +1,52 @@
+.img1VidAct{
+    margin-left: 224px;
+    cursor:pointer ;
+    border-radius:50px;
+    width:80px;
+    height: 80px;
+   
+}
+.img2VidAct{
+    margin-left: 25px;
+    cursor:pointer ;
+    border-radius:50px;
+    width:80px;
+    height: 80px;
+
+}
+
+.img3VidAct{
+    margin-left: -45px;
+    cursor:pointer ;
+    border-radius:50px;
+
+    width:80px;
+    height: 80px;
+
+}
+
+.img4VidAct{
+    margin-left:-105px ;
+    cursor:pointer ;
+    border-radius:50px;
+
+    width:80px;
+    height: 80px;
+
+}
+
+.img5VidAct{
+    margin-left: -145px;
+    cursor:pointer ;
+    border-radius:50px;
+    width:80px;
+    height: 80px;
+
+    
+}
+
+Button{
+    color:#A6ACAF;
+    background-color: #ECF0F1 ;
+    border-color: #ECF0F1 ;
+}

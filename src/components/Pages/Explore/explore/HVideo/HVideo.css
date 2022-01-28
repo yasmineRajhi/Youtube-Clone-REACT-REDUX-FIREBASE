@@ -1,0 +1,49 @@
+/*lkol*/
+.hvideo{
+    border-radius: 0px !important;
+    display: flex;
+    flex-direction: row;
+    width: 620px;
+    margin-bottom: 7px;
+    margin-left: 61px; 
+    cursor: pointer;
+}
+.Hvexplore{
+    border-radius: 0px !important;
+}
+/*lktiba lkooool*/
+.detailsHV{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    max-width:300px ;
+}
+
+/*image wa7adha*/
+.hvideo img{
+    width: 217px;
+    height: fit-content;
+    border-radius: 0px !important;
+}
+
+/*title*/
+.detailsHV h2{
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/*channel + timelapse*/
+.detailsHV p{
+    margin-top: -1px;
+    font-size: 8px;
+    margin-left: 0px;
+    color:#606060 ;
+
+}
+
+/*description*/
+.detailsHV small{
+    margin-top: -10px;
+    font-size: 8px;
+    color:#606060;
+}

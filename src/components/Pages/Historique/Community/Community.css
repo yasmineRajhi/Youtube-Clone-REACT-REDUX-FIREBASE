@@ -1,0 +1,16 @@
+.community{
+    background-color: #F9F9F9;
+    width: 300;
+    margin-right: 300px;
+    margin-left: 90px;
+}
+
+.dits{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+span{
+    font-weight: 600;
+}

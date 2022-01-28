@@ -1,5 +1,6 @@
-import React from 'react';
-import { useDispatch } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import { login } from '../../../Redux/Actions/Auth.action';
 import './_login.scss'
 
@@ -7,9 +8,18 @@ const Login = () => {
 
     const dispatch = useDispatch()
 
+    const accessToken = useSelector(state=>state.auth.accessToken)
     const handleLogin = () => {
         dispatch(login())
     }
+
+    const Navigate = useNavigate()
+
+    useEffect(()=>{
+        if(accessToken){
+            Navigate('/');
+        }
+    },[accessToken,Navigate])
 
   return (
     <div className='login'>

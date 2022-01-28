@@ -1,0 +1,15 @@
+.imgActualite{
+    width: 70px;
+    height:70px;
+    border-radius: 50px;
+    margin-top: 25px;
+    margin-left: 130px;
+    cursor:pointer;
+}
+.smallActualite{
+    margin-top: 60px;
+    margin-left: -120px;
+}
+.ActVid{
+    margin-left: 25px;
+}

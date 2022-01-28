@@ -2,6 +2,8 @@ import React from "react";
 import * as GrIcons from 'react-icons/gr';
 import * as BiIcons from 'react-icons/bi';
 import * as MdIcons from 'react-icons/md';
+import * as IoIcons from  'react-icons/io5';
+import * as BsIcons from 'react-icons/bs';
 export const SideBarData =[
     {
         title:'Home',
@@ -11,7 +13,7 @@ export const SideBarData =[
     },
     {
         title:'Explore',
-        path:'/',
+        path:'/explore',
         Icon:<MdIcons.MdOutlineExplore/>,
         className:'nav-text'
     },
@@ -23,8 +25,20 @@ export const SideBarData =[
     },
     {
         title:'History',
-        path:'/',
+        path:'/Historique',
         Icon:<GrIcons.GrHistory/>,
+        className:'nav-text'
+    },
+    {
+        title:'Games',
+        path:'/',
+        Icon:<IoIcons.IoGameControllerOutline />,
+        className:'nav-text'
+    },
+    {
+        title :'News',
+        path:'/Actualite',
+        Icon: <BsIcons.BsNewspaper />,
         className:'nav-text'
     }
 ]

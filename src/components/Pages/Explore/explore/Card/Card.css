@@ -1,0 +1,30 @@
+.Card{
+    background-color:white;
+    max-width:148px;
+    height:fit-content;
+    border-radius:5px;
+    cursor:pointer;
+    height:78px;
+    margin-left: 35px;
+    
+   
+}
+
+.Card:hover{
+    background-color:#E5E7E9;
+}
+
+.Card__icon{
+    width:23px;
+    height:fit-content;
+    height:23px;
+    margin-left: 12px;
+    margin-top: 11px;
+    
+}
+.Card__title{
+    font-size: 11px;
+    margin-left: 16px;
+    margin-top: 11px;
+    font-weight: 500;
+}

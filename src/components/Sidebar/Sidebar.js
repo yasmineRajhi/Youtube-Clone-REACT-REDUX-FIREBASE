@@ -2,13 +2,18 @@ import React, { useState } from 'react';
 import * as FaIcons from 'react-icons/fa';
 import { SideBarData } from './SideBarData';
 import { Link } from 'react-router-dom';
-
 import './_sidebar.scss'
+import { useDispatch } from 'react-redux';
+import { log_out } from '../../Redux/Actions/Auth.action';
 
 const Sidebar = () => {
   const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
+  const dispatch = useDispatch()
+  const handleLogOut = () => {
+    dispatch(log_out())
+  }
   return (
     <>
       <div>
@@ -35,12 +40,17 @@ const Sidebar = () => {
               return (
                 <li className={item.className}>
 
-                  <a href='#'>
+                  <Link to={item.path} >
                     <span>{item.Icon}</span>
-                    {item.title}</a>
+                    {item.title}</Link>
                 </li>
               );
             })}
+            <li className='nav-text' onClick={handleLogOut}>
+              <Link to='#'>
+              Log out
+              </Link>
+            </li>
             <div className='sidebar__nav__footer'>
               PrésentationPresseDroits d'auteurNous contacterCréateursPublicitéDéveloppeurs
               Conditions d'utilisationConfidentialitéRègles et sécuritéPremiers pas sur YouTubeTester de nouvelles fonctionnalités
