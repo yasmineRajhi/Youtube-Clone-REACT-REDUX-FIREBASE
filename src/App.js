@@ -11,7 +11,8 @@ const App = () => {
   const Navigate = useNavigate()
   useEffect(()=>{
     if(!loading && !accessToken){
-      Navigate('/login')
+      Navigate('/login');
+      window.location.reload(false)
     }
   },[accessToken,loading,Navigate])
   return (

@@ -23,10 +23,7 @@ const Header = () => {
                 <div className='right-of-navbar'>
                     <Io5Icons.IoAppsOutline className='right__nav__apps'/>
                     <AiIcons.AiOutlineMore className='right__nav__more'/>
-                    <button className='right__nav__connect__btn'>
-                        <VSCIcons.VscAccount className='right__nav__connect__btn__icon'/>
-                        SE CONNECTER
-                    </button>
+                    <VSCIcons.VscAccount className='right__nav__connect__btn__icon'/>
                 </div>
             </nav>
             

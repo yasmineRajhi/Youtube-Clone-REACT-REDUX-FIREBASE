@@ -38,7 +38,7 @@ const Sidebar = () => {
             </li>
             {SideBarData.map((item, index) => {
               return (
-                <li className={item.className}>
+                <li key={index} className={item.className}>
 
                   <Link to={item.path} >
                     <span>{item.Icon}</span>
@@ -48,7 +48,7 @@ const Sidebar = () => {
             })}
             <li className='nav-text' onClick={handleLogOut}>
               <Link to='#'>
-              Log out
+                Log out
               </Link>
             </li>
             <div className='sidebar__nav__footer'>
