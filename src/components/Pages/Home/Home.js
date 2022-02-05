@@ -1,20 +1,26 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { useDispatch,useSelector } from 'react-redux';
+import { getPopVideos } from '../../../Redux/Actions/Video.action';
 import Categories from '../../Categories/Categories';
-import Header from '../../Header/Header';
-import Video from '../../Video/Video';
+import HomePageVideo from '../../Video/HomePageVideo';
 import './_home.scss'
 const Home = () => {
+    const dispatch = useDispatch()
+    useEffect(()=>{
+        dispatch(getPopVideos())
+    },[dispatch])
+
+    const {videos} = useSelector(state=>state.homeVideos)
     return (
         <>
             <Container>
                 <Categories />
                 <Row>
                     {
-                        [...new Array(20)].map(() => (
-                            <Col lg={3} md={4}>
-                                <Video img1="https://i.ytimg.com/vi/jKKrfr4To14/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLC458AGy2eX5BLF4gWbQQ_4UsxL4w" title="Stephanie Beatriz - Waiting On A Miracle (From Encanto)
-" channel="DisneyMusicVEVO" view="724k views" timelapse="11 hours ago"/>
+                        videos.map((video) => (
+                            <Col key={video.id} lg={3} md={4}>
+                                <HomePageVideo video={video}/>
                             </Col>
                         ))
                     }
