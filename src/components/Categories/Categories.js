@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { getVideosByCategory } from '../../Redux/Actions/Video.action';
 import './_categories.scss'
 
 const category = [
@@ -16,7 +18,8 @@ const category = [
   "Kpop",
   "K-Drama",
   "jazz",
-  "ASMR","Ionic",
+  "ASMR",
+  "Ionic",
   "Music",
   "Mix",
   "BTS",
@@ -28,8 +31,14 @@ const category = [
 
 const Categories = () => {
   const [active,setActive] = useState('All')
+  const dispatch = useDispatch()
   const handleClick = (item)=>{
     setActive(item)
+    if(item==='All'){
+      dispatch(getVideosByCategory())
+    }else{
+      dispatch(getVideosByCategory(item))
+    }
   }
   return <div className="Bar">
     {

@@ -16,7 +16,6 @@ function Video({img1,title,channel,view,timelapse}) {
             </div>
          
         </div>
-       
     )
 }
 

@@ -51,11 +51,6 @@ const Sidebar = () => {
                 Log out
               </Link>
             </li>
-            <div className='sidebar__nav__footer'>
-              PrésentationPresseDroits d'auteurNous contacterCréateursPublicitéDéveloppeurs
-              Conditions d'utilisationConfidentialitéRègles et sécuritéPremiers pas sur YouTubeTester de nouvelles fonctionnalités
-              © 2021 Google LLC
-            </div>
           </ul>
         </nav>
       </div>

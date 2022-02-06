@@ -3,13 +3,16 @@ import request from '../apis/Yasmine'
 import moment from 'moment'
 import numeral from 'numeral'
 import './_video.scss'
+import { useNavigate } from 'react-router-dom'
 function Video({video}) {
     const {id, snippet:{channelId,channelTitle,title,publishAt,thumbnails:{medium}}} = video
     const [views, setViews] = useState(null);
     const [duration, setDuration] = useState(null);
     const [channelIcon, setChannelIcon] = useState(null);
+    const _videoId = id?.videoId || id
     const seconds = moment.duration(duration).asSeconds()
     const format_duration = moment.utc(seconds * 1000).format("mm:ss")
+    const Navigate = useNavigate()
     useEffect(()=>{
         const get_vid_details=async ()=>{
             const {data:{ items }} = await request('/videos',{
@@ -35,8 +38,11 @@ function Video({video}) {
         }
         get_channel_icon()
     },[channelId])
+    const handleVideoClick = () => {
+        Navigate(`/watch/${_videoId}`)
+    }
     return (
-        <div className='Video__comp'>
+        <div className='Video__comp' onClick={handleVideoClick}>
             <div className='video__thumbnail'>
                 <img src={medium.url} alt=""></img>
                 <span>{format_duration}</span>
